@@ -1,0 +1,87 @@
+@(message: String, style: String = "java")
+
+@defining(play.core.PlayVersion.current) { version =>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li ><a href='@routes.HomeController.pagrindinis'>Pagrindinis</a></li>
+
+
+                <li class="active"><a href='@routes.HomeController.masazai'>Masažai</a></li>
+                <li><a href='@routes.HomeController.kontaktai'">Kontaktai</a></li>
+                <li><a href='@routes.HomeController.apie'>Apie</a></li>
+                <li><a href='@routes.HomeController.kainos'>Kainos</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="kalba"><a href="../de/index2.html"><span class="lang-sm lang-lbl" lang="de" style="color:green" ></span></a></li>
+                <li id="kalba"><a href="../lt/index2.html"><span class="lang-sm lang-lbl" lang="lt" style="color:green" ></span></a></li>
+                <li id="kalba"><a href="../ru/index2.html"><span class="lang-sm lang-lbl" lang="ru" style="color:green" ></span></a></li>
+                <li id="kalba"><a href="../en/index2.html"><span class="lang-sm lang-lbl" lang="en" style="color:green" ></span></a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div><h3> Limfodrenažinis masažas</h3></div>
+            <div class="text-center"> <img src='@routes.Assets.at("images/massage164.jpg")' class="img-circle" alt="Medicine massage" width="250" height="250"></a></div>
+            <p class="text-justify">
+                <span class="glyphicon glyphicon-asterisk"></span> Tai saugus efektyvus būdas sustiprinti sveikatą bei palaikyti gerą savijautą. Sveikiems žmonėms - tai profilaktinė priemonė, palaikanti normalią medžiagų apykaitą.
+                <br><span class="glyphicon glyphicon-asterisk"></span>Masažo metu suaktyvinami pažeistų minkštųjų audinių regeneracijos procesai,  slopinami uždegiminiai procesai, sustiprinamas imunitetas, pagerinamas audinių aprūpinimas deguonimi.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Limfodrenažinis masažas tinka visiems, kurie jaučia kojų pabrinkimą, patinimą ar tiesiog nuovargį. Po ilgos dienos jis puikiai atpalaiduoja pavargusias kojas ir suteikia lengvumo pojūtį. Taip pat tinka žmonėms, kurių kojos visada šaltos.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Šis masažas grožio tikslais naudojamas celiulito gydymui ir profilaktikai, odos stangrinimui, apimčių mažinimui, bendrai savijautai gerinti ir mažinti patinimus  po plastinių operacijų.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Šis masažas atliekamas moterims ir vyrams.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Gydymui ši procedūra skiriama kasdien, profilaktiškai - 2-3 kartus per savaitę. Norimas efektas pasiekiamas po 15 procedūrų.</p>
+            <?php
+echo file_get_contents("test.txt");
+?>
+        </div>
+        <div class="col-sm-6">
+            <div class="text-center"><h3> Karštų-šaltų akmenų masažas</h3></div>
+            <div class="text-center"><img src='@routes.Assets.at("images//mas3.jpeg")' class="img-circle" alt="Hot Stone Massage" width="250" height="250"></a></div>
+            <p class="text-justify">
+                <span class="glyphicon glyphicon-asterisk"></span> Akmenys turi savybę iš raumenų pašalinti toksines medžiagas, susikaupusias dėl streso ir nesveiko gyvenimo būdo, gerina miegą, padeda  sureguliuoti  kraujospūdį, teigiamai   veikia   širdies  ritmą,  sužadinamos natūralios organizmo galios, padedančios įveikti ligas, paspartinamas gijimo procesas.
+                <br><span class="glyphicon glyphicon-asterisk"> Ši terapija veikia daugelį organizmo grandžių:<ul>
+				<span class="glyphicon glyphicon-hand-right"></span> Stimuliuoja imuninę sistemą;
+				<br><span class="glyphicon glyphicon-hand-right"></span> Suaktyvina kraujotaką;
+				<br><span class="glyphicon glyphicon-hand-right"></span> Pagerėja aprūpinimas deguonimi;
+				<br><span class="glyphicon glyphicon-hand-right"></span> Lengvai ir maloniai numalšina raumenų, nugaros, galvos ir kaklo skausmus;
+				<br><span class="glyphicon glyphicon-hand-right"></span> Teigiamai veikia nervinę sistemą;
+				<br><span class="glyphicon glyphicon-hand-right"></span> Gerindama metabolizmą, padeda atsikratyti riebalų pertekliaus.</ul>
+				<br><span class="glyphicon glyphicon-asterisk"></span> Šis   masažas  ypač   tinka pervargus, patyrus gilų stresą,  jaučiant  nervingumą,  apatiją,  miego sutrikimus.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+<footer class="footer">
+    <div class="container">
+
+
+        <p class="text-muted">Alex design &copy 2016</span></p>
+    </div>
+
+
+</footer>
+}

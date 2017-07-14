@@ -1,0 +1,177 @@
+@(message: String, style: String = "java")
+
+@defining(play.core.PlayVersion.current) { version =>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="index11.html">Vidos Masažai</a> -->
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href='@routes.HomeController.pagrindinis'>Pagrindinis</a></li>
+                <li><a href='@routes.HomeController.masazai'>Masažai</a></li>
+                <li><a href='@routes.HomeController.kontaktai'>Kontaktai</a></li>
+                <li><a href='@routes.HomeController.apie'>Apie</a></li>
+                <li><a href='@routes.HomeController.kainos'>Kainos</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="kalba"><a href="../de/index1.html"><span class="lang-sm lang-lbl" lang="de" style="color:green" ></span></a></li>
+                <li id="kalba"><a href="../lt/index1.html"><span class="lang-sm lang-lbl" lang="lt" style="color:green" ></span></a></li>
+                <li id="kalba"><a href="../ru/index1.html"><span class="lang-sm lang-lbl" lang="ru" style="color:green" ></span></a></li>
+                <li id="kalba"><a href="../en/index1.html"><span class="lang-sm lang-lbl" lang="en" style="color:green" ></span></a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+
+                <img src='@routes.Assets.at("images/mas1-good.jpg")' alt="Massage1" >
+                <div class="carousel-caption">
+
+                    <h3>Net trumpalaikis masažas atstato organizmą, šąlina raumenų nuovargį.</h3>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src='@routes.Assets.at("images/mas5-good.jpeg")' alt="Massage2">
+                <div class="carousel-caption">
+                    <h3>Masažas yra vienas iš ypatingų veiksnių žmogaus gyvenime, padedančių palaikyti puikią kūno ir dvasios būsena.</h3>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src='@routes.Assets.at("images/mas6-good.jpeg")' alt="Massage3" >
+                <div class="carousel-caption">
+                    <h3>Masažas skatiną atsipalaidimą ir gerina miego kokybę.</h3>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src='@routes.Assets.at("images/mas44-good.jpeg")' alt="Massage4" >
+                <div class="carousel-caption">
+                    <h3>Masažas pagerina kraujotaką, pagreitiną darbingumo atkūrimo procesą, padeda sumažinti įvairius skausmus</h3>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Agal</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Pirmyn</span>
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="text-center"><h2> Masažų privalumai</h2></div>
+            <p class="text-justify">
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Galvos masažas – padeda atsipalaiduoti, ramina esant stresui, šalina spazminius skausmus, gerina kraujotaką.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Pečių juostos masažas – gerina kraujotaką, atpalaiduoja raumenis, ramina nervinę sistemą, mažina skausmus pečių-kaklo srityje.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Nugaros masažas – atpalaiduoja įsitempusius raumenis, gerina audinių mitybą, gerina bendrą organizmo būklę, palengvina būseną po nervų šaknelių uždegimo, stuburo operacijų.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Krūtinės ląstos masažas – palengvina būklę sergant kvėpavimo takų ligomis (plaučių uždegimu, bronchitu, gripu, bronchine astma ir kitomis).
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Pilvo masažas – skatina virškinimą, teigiamai veikia pilvo ertmės organus, pagyvina lygiųjų raumenų darbą, gerina skrandžio, žarnyno veiklą, tulžies išsiskyrimą, padeda užkietėjus viduriams ar esant dujų kaupimuisi žarnyne.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Juosmens masažas – sumažina skausmą po operacijų, pagerina kraujotaką, atpalaiduoja, palengvina būseną po nervų šaknelių uždegimo.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Kojų masažas – atpalaiduoja įtemptus audinius, mažina sąnarių, raumenų, pėdos skausmus, dažniausiai rekomenduojamas po patirtų traumų, operacijų, esant kojų nuovargiui.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Rankų masažas – atpalaiduoja įtemptus audinius, skatina kraujo apykaitą, mažina sąnarių, raumenų, plaštakos skausmus, dažniausiai rekomenduojamas po patirtų traumų, operacijų, esant rankų nuovargiui.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Bendras kūno masažas –  atjaunina organizmą, nuima stresą ir nervinę įtampą, atpalaiduoja, stiprina imunitetą,sumažina raumenų spazmus ir įtampą, sumažina skausmą, pagerina limfos tekėjimą ir bendrą organizmo būklę.
+            </p>
+
+        </div>
+        <div class="col-sm-6">
+            <div class="text-center"><h2> Pagrindinės eterinių aliejų savybės </h2></div>
+            <p class="text-justify">
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Analgetiniai, mažinantys skausmą: bergamočių, ramunėlių, levandų, mairūnų, rozmarinų.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Antibiotiniai, padedantys įveikti organizmo infekciją: smulkiųjų mirtenių, česnakų, sėklučių, penkiagyslių mirtenių, kriptokarijų, pražiangelapių mirtenių, arbatmedžio.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Antidepresiniai, keliantys nuotaiką: bergamočių, kvapiųjų šalavijų, pelargonijų, greipfrutų, jazminaičių, levandų, mandarinų, melisų, baltųjų akacijų, apelsinų, rožių santalų, kanangų, bazilikų, ramunėlių, jazminų, sandalmedžio, ylang ylang.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Antiseptiniai, saugantys nuo bakterinės infekcijos arba padedantys ją įveikti: bergamočių, eukaliptų, kadagių, levandų, sėklučių, kriptokarijų, rozmarinų, pražangialapių mirtenių, citrinų, citrinų žolė, apelsinų, pušies, sandalmedžio, arbatmedžio, čiobrelių.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Antispazminiai, mėšlungį (ypač žarnyno ir gimdos) atleidžiantys: ramunėlių, kardamonų, kvapiųjų šalavijų, imbierų, mairūnų, apelsinų.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Antivirusiniai, naikinantys arba slopinantys virusus: bergamočių, eukaliptų, česnakų, levandų, sėklučių, kriptokarijų, pražangelapių mirtenių.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Atsikosėjimą lengvinantys: bergamočių, eukaliptų, mairūnų, miros, santalų, levandos, citrinų.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Baktericidiniai, naikinantys bakterijas: bergamočių, smulkiųjų mirtenių, eukaliptų, kadagių, levandų, sėklučių, penkiagyslių mirtenių, rozmarinų.
+                <br><span class="glyphicon glyphicon-asterisk"></span>	Citofilaksiniai, atnaujinantys ląsteles: visi eteriniai aliejai o ypač levandų, pražangialapių mirtenių.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Detoksikuojamieji, padedantys iš organizmo išvalyti toksinus: beržų, pankolių, česnakų, kadagių, rožių.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Dezodoruojantys, šalinantys blogą kvapą: bergamočių, kvapiųjų šalavijų, kiparisų, eukaliptų, levandų, citronelijų, rozmarino, arbatmedžio.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Dieretikai, skatinantys šlapimo gaminimąsi: beržų, ramunėlių, kedrų, pankolių, pelargonijų, kadagių, greipfrutų, levandų, citrinų, pačiolių, šalavijo.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Fungicidiniai, naikinantys gribelius ir sporas arba slopinantys jų augimą: levandų, miros, pražangialapių mirtenių.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Gimdos stiprinimui aliejus: kvapiųjų šalavijų, jazminaičių, rožių.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Karščiavimą mažinantys: bergamočių, ramunėlių, eukaliptų, melisų, pipirmėčių.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Keliantys kraujo spaudimą: kvapiųjų šalavijų, isopų, rozmarinų.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Kosulį mažinantys: levandų, santalų, čiobrelių.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Mažinantys kraujo spaudimą: levandų, mairūnų, melisų, kanangų, pelargonijų.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Mažinantys uždegimą: bergamočių, ramunėlių, levandų, miros.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Nervų sistemą stiprinantys: ramunėlių, levandų, mairūnų, melisų, rozmarinų.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Odą rausvinantys ir šildantys aliejai: beržų, juodujų pipirų, eukaliptų, kadagių, mairūnų, rozmarinų.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Prakaitavimą skatinantys aliejai: bazilikų, ramunėlių, kadagių, pipirmėčių.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Sedatyviniai, nervų sistemą raminantys: bergamočių, ramunėlių, kvapiųjų šalavijų, bosvelijų, levandų, mairūnų, rožių, kanangų, miros, sandalmedžio.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Skaidrinantys sąmonę, sužadinantys protinę veiklą: bazilikas, greipfrutų, rozmarinų, čiobrelių.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Skatinantys menstruacijas, kraujavimą: bazilikų, ramunėlių, kvapiųjų šalavijų, pankolių, kadagių, mairūnų, miros, pipirmėčių, rožių, rozmarinų, vaistinių šalavijų, juozažolių, levandų.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Stimuliuojantys, didinantys bendrą kūno arba organų aktyvumą: bazilikų, eukaliptų, pelargonijų, pipirmėčių, rozmarinų, citrinų, citrinos žolės, arbatmedio.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Stimuliuojantys tulžies tėkmę: ramunėlių, levandų, pipirmėčių, rozmarinų.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Stiprinantys kepenis: ramunėlių, kiparisų, citrinų, pipirmėčių, rozmarinų, čiobrelių, kardamono, rožių.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Stiprinantys apsaugines organizmo funkcijas ir pasipirešinimą infekcijai: levandų, sėklučių, rožmedžių.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Sutraukiantys audinius, neleidžiantys prarasti skysčius: kedrų, kiparisų, bosvelijų, kadagių, rožių, santalų.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Kraujagysles plečiantys: mairūnų.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Kraujagysles siaurinantys: ramunėlių, kiparisų, rožių.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Žaizdas gydantys: bergamočių, ramunėlių, levandų, miros.
+                <br><span class="glyphicon glyphicon-asterisk"></span> Lytinį potraukį didinantys: muskatinio šalavijo, pankolio, jazmino, nerolio, rožių, rozmarino, sandalmedžio, ylang ylang.
+            </p>
+
+
+            <!--<p><span class="glyphicon glyphicon-asterisk"></span>
+            <?php
+            echo file_get_contents("test.txt");
+            ?>
+            </p> -->
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+<footer class="footer">
+    <div class="container">
+
+
+        <p class="text-muted">Alex design &copy 2016</span></p>
+    </div>
+
+
+</footer>
+}

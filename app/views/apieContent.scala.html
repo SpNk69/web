@@ -1,0 +1,125 @@
+@(message: String, style: String = "java")
+
+@defining(play.core.PlayVersion.current) { version =>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="index11.html">Vidos Masažai</a> -->
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li ><a href='@routes.HomeController.pagrindinis'>Pagrindinis</a></li>
+                <li><a href='@routes.HomeController.masazai'>Masažai</a></li>
+                <li><a href='@routes.HomeController.kontaktai'>Kontaktai</a></li>
+                <li class="active"><a href='@routes.HomeController.apie'>Apie</a></li>
+                <li><a href='@routes.HomeController.kainos'>Kainos</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="kalba"><a href="../de/index1.html"><span class="lang-sm lang-lbl" lang="de" style="color:green" ></span></a></li>
+                <li id="kalba"><a href="../lt/index1.html"><span class="lang-sm lang-lbl" lang="lt" style="color:green" ></span></a></li>
+                <li id="kalba"><a href="../ru/index1.html"><span class="lang-sm lang-lbl" lang="ru" style="color:green" ></span></a></li>
+                <li id="kalba"><a href="../en/index1.html"><span class="lang-sm lang-lbl" lang="en" style="color:green" ></span></a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h2 class="text-center">Informacija apie mane</h2>
+    <p></p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h3  class="text-center"> </h3>
+
+            <!-- <a href="pics/massage164.jpg" class="circle"> -->
+
+            <img src='@routes.Assets.at("images/as2.jpg")' class="img-circle" alt="Medicine massage" >
+            <p class="text-justify">
+
+        </div>
+
+
+
+        <div class="col-md-6">
+            <h4 class="text-center"> Išsilavinimas: </h4>
+            <ul>
+                <li>"Vilniaus aukštesnioji medicinos mokykla", Lietuva.</li>
+                <li>Klaipėdos universitetas. Bakalauro laipsnis "Visuomenės sveikata".</li>
+
+            </ul>
+
+
+            <h4 class="text-center"> Kursai: </h4>
+            <ul>
+
+                <li>2010 metai - "Baltic SPA Professional" Kursai (Latvija), SPA masažai.</li>
+                <li>2012 metai - Slaugos darbuotojų tobulinimosi ir specializacijos centras. </li>
+                <li>Pažymėjimas Nr. KV 120146 - suteikta teisė daryti gydomuosius masažus.</li>
+            </ul>
+
+
+            <h4 class="text-center"> Darbo patirtis: </h4>
+
+            <!-- <a href="pics/mas3.jpeg" class="img-circle"> -->
+
+
+            <p class="text-justify"><ul>
+            <li>27 metai: Medicinos sesuo.</li>
+            <li>6 metai: Visuomenės sveikatos priežiūros specialistė.</li>
+            <li>6 metai: Masažuotoja.</li>
+        </ul> </p>    </p>
+
+        </div>
+        <div class="col-md-3">
+            <h4 class="text-center"> SPA sertifikatai: </h4>
+            <ul>
+
+                <li>Klasikinis segmentinis masažas</li>
+                <li>Karštų-šaltų akmenų masažas </li>
+                <li>Limfodrenažinis masažas</li>
+                <li>Thai pėdų masažas</li>
+                <li>Tradicinis ajurvedinis masažas </li>
+                <h4 class="text-center"> Gydomieji masažai: </h4>
+                <li>Sergant sąnarių, stuburo, nervų, širdies-kraujagyslių, kvėpavimo sistemų ligomis</li>
+
+                <li>Medžiagų apykaitos sutrikimo atvejais</li>
+                <li>Segmentinis masažas</li>
+                <li>Jungiamojo audinio masažas</li>
+                <li>Vaikų masažas</li>
+                <li>Sportinis masažas</li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <p class="text-muted">Alex design &copy 2016</span></p>
+        </div>
+
+    </div>
+</footer>
+
+
+
+</body>
+}
