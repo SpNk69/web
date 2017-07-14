@@ -1,3 +1,7 @@
+
+/*FORM*/
+
+
 .break {
 	word-wrap: break-word;
 }
@@ -14,7 +18,7 @@
 	border:1px;
 	color:black;
 }
-
+#success_message{ display: none;}
 
 #gmap_canvas{
 	min-height: 300px;width:100%;
@@ -43,6 +47,7 @@ footer {
     width: 100%;
     	background: #333333;
     	font: white;
+
 }
 
 
